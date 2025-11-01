@@ -1,0 +1,36 @@
+package com.jobportal.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class PaymentRequestDTO {
+    private Long userId;
+    private Long planId;
+    private Double amount;
+    public Long getUserId() {
+        return userId;
+    }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+    public Long getPlanId() {
+        return planId;
+    }
+    public void setPlanId(Long planId) {
+        this.planId = planId;
+    }
+    public Double getAmount() {
+        return amount;
+    }
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
+
+
+}
