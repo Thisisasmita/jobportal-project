@@ -1,0 +1,163 @@
+/* 🌈 Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f9f9f9, #f0f4ff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 🧭 Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b4eff;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffda79;
+}
+
+nav button {
+  background: #ff4747;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #e63e3e;
+}
+
+/* 📄 Page Container */
+.page {
+  max-width: 700px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* 🏷️ Headings */
+h1, h2 {
+  color: #2b4eff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 🧾 Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #2b4eff;
+}
+
+button[type="submit"] {
+  width: 85%;
+  background: #2b4eff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #2441cc;
+}
+
+/* 💼 Job List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f7f8ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+li strong {
+  color: #2b4eff;
+}
+
+/* 🧍 Auth Links */
+a {
+  color: #2b4eff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .page {
+    width: 90%;
+    padding: 25px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+}
