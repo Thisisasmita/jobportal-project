@@ -7,11 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import com.jobportal.entity.User;
 
-
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    User findByUserEmail = null;
     Optional<User> findByEmail(String email);
-    boolean existByUserName(String name);
+    boolean existsByName(String name);
     boolean existsByEmail(String email);
 }

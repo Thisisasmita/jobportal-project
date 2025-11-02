@@ -16,7 +16,7 @@ public class RecruiterService {
     private RecruiterRepository recruiterRepository;
 
     public Recruiter createOrRecruiterProfile(String recruiterEmail,RecruiterDTO dto){
-        Recruiter recruiter = recruiterRepository.findByEmail(recruiterEmail).orElse(new Recruiter());
+        Recruiter recruiter = recruiterRepository.findByRecruiterEmail(recruiterEmail).orElse(new Recruiter());
         recruiter.setRecruiterEmail(dto.getRecruiterEmail());
         recruiter.setCompanyName(dto.getCompanyName());
         recruiter.setRecruiterPhone(dto.getRecruiterPhone());

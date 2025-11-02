@@ -23,8 +23,8 @@ public class JobSeekerController {
         return ResponseEntity.ok(jobSeekerService.createOrUpdate(dto));
 
     }
-    @GetMapping("/(email)")
-     public ResponseEntity<JobSeekerDTO>saveJobSeekerByEmail(@PathVariable String email){
+    @GetMapping("/{email}")
+    public ResponseEntity<JobSeekerDTO>getJobSeekerByEmail(@PathVariable String email){
         return ResponseEntity.ok(jobSeekerService.getJobSeekerByEmail(email));
 
 

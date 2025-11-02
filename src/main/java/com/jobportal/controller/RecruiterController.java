@@ -27,7 +27,7 @@ public class RecruiterController {
 
     // ✅ Create or update recruiter using recruiterEmail in URL
     @PostMapping("/{recruiterEmail}")
-    public ResponseEntity<Recruiter> getRecruiterByEmail(
+    public ResponseEntity<Recruiter> saveOrUpdateRecruiter(
             @PathVariable String recruiterEmail,
             @RequestBody RecruiterDTO dto) {
         return ResponseEntity.ok(recruiterService.createOrRecruiterProfile(recruiterEmail, dto));

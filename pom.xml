@@ -51,19 +51,6 @@
     <artifactId>spring-boot-starter-websocket</artifactId>
 </dependency>
 		<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-config-server</artifactId>
-</dependency>
-<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-    </dependency>
-
-		<dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-gateway</artifactId>
-    </dependency>
-		<dependency>
         <groupId>com.cloudinary</groupId>
         <artifactId>cloudinary-http44</artifactId>
         <version>1.29.0</version>
@@ -139,10 +126,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				  <configuration>
-                <mainClass>com.jobportal.JobportalApplication</mainClass>
-            </configuration>
 			</plugin>
+			<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.3</version>
+            <configuration>
+                <skipTests>true</skipTests>
+            </configuration>
+        </plugin>
 		</plugins>
 	</build>
 

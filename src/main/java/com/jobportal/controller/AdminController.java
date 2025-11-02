@@ -27,12 +27,12 @@ public class AdminController {
         return ResponseEntity.ok(adminService.performAction(dto));
     }
 
-    @GetMapping("/admin/{adminId}")
+    @GetMapping("/api/admin/actions/{adminId}")
     public ResponseEntity<List<Admin>> getLogsByAdmin(@PathVariable Long adminId) {
         return ResponseEntity.ok(adminService.getActionsByAdmin(adminId));
     }
 
-    @GetMapping("/user/{userId}")
+    @GetMapping("/api/admin/users/{userId}")
     public ResponseEntity<List<Admin>> getLogsByUser(@PathVariable Long userId) {
         return ResponseEntity.ok(adminService.getActionsByUser(userId));
     }

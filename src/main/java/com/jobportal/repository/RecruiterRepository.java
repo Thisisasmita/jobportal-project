@@ -8,9 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.jobportal.entity.Recruiter;
 
 @Repository
-public interface RecruiterRepository extends JpaRepository<Recruiter,Long> {
-    Optional<Recruiter>findByEmail(String recruiterEmail);
-    Optional<Recruiter>findByCompanyName(String companyName);
+public interface RecruiterRepository extends JpaRepository<Recruiter, Long> {
 
+    Optional<Recruiter> findByRecruiterEmail(String recruiterEmail);
 
+    Optional<Recruiter> findByCompanyName(String companyName);
 }
+

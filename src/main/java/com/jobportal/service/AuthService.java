@@ -20,14 +20,14 @@ public class AuthService {
     private JWTUtil jwtUtil;
 
     public String register(RegisterRequestDTO dto){
-        if(userRepository.existByUserName(dto.name) || userRepository.existsByEmail(dto.email)){
+        if (userRepository.existsByName(dto.name) || userRepository.existsByEmail(dto.email)){
         throw new RuntimeException("User already exist");
 
     }
      User user = new User();
      user.setName(dto.getName());
      user.setEmail(dto.getEmail());
-     user.setPassword(dto.getPassword());
+    user.setPassword(dto.getPassword());
      user.setRole(dto.getRole());
 
 

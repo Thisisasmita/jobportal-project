@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jobportal.entity.ChatSupport;
 
 @RestController
+
 public class ChatSupportController {
 
     @MessageMapping("/sendMessage")

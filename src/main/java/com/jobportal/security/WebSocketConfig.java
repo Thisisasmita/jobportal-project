@@ -13,7 +13,7 @@ import com.jobportal.service.ChatLoggerService;
 
 @Configuration
 @EnableWebSocketMessageBroker
-public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
+public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 
     private final ChatLoggerService chatLoggerService;
 
